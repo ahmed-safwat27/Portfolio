@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Ahmed Safwat | Portfolio</title>
+    <meta
+      name="description"
+      content="Portfolio of Ahmed Safwat — Front‑End developer. Projects, skills, and contact."
+    />
+    <meta property="og:title" content="Ahmed Safwat | Portfolio" />
+    <meta
+      property="og:description"
+      content="Front‑End developer — HTML, CSS, JavaScript, TypeScript. Projects & contact."
+    />
+    <meta name="theme-color" content="#0f172a" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@500;700;800;900&family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkfGeh8qT9HcQ+u6l1Y8VQG2wS7i0Qm1YQv7Qh4fZfQ9WlH0hZPiQfQ1A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="logo website.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="logo website.png" />
+    <link rel="apple-touch-icon" href="logo website.png" />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="nav" role="banner">
+      <div class="nav__inner">
+        <a class="brand" href="#home" aria-label="Ahmed Safwat - Home">
+          <span class="brand__logo">AS</span>
+          <span>Ahmed Safwat</span>
+        </a>
+        <div class="spacer"></div>
+        <nav aria-label="Primary" class="nav__links" id="navLinks">
+          <a class="nav__link" href="#home">Home</a>
+          <a class="nav__link" href="#skills">Skills</a>
+          <a class="nav__link" href="#projects">Projects</a>
+          <a class="nav__link" href="#about">About</a>
+          <a class="nav__link" href="#contact">Contact</a>
+        </nav>
+        <button
+          id="themeToggle"
+          class="theme-toggle"
+          type="button"
+          aria-label="Toggle theme"
+        >
+          <i class="fa-solid fa-moon"></i>
+        </button>
+        <button
+          id="menuToggle"
+          class="menu-toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="navLinks"
+        >
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </header>
+
+    <main id="main">
+      <!-- Hero -->
+      <section id="home" class="hero">
+        <div class="container hero__grid">
+          <div>
+            <p class="muted">Hey, I’m <strong>Ahmed Safwat</strong> —</p>
+            <h1>
+              Front‑End Developer
+              <br /><span class="typing" aria-live="polite"></span>
+            </h1>
+            <p>
+              I build clean, responsive interfaces with HTML, CSS, JavaScript
+              and TypeScript. Below are selected projects and ways to reach me.
+            </p>
+            <div class="buttons">
+              <a class="btn primary" href="#projects"
+                ><i class="fa-solid fa-rocket"></i> View Projects</a
+              >
+              <a class="btn" href="#contact"
+                ><i class="fa-solid fa-envelope"></i> Contact Me</a
+              >
+            </div>
+          </div>
+          <div class="hero__photo reveal" aria-hidden="true">
+            <!-- Replace src with your own photo -->
+            <img
+              src="1.avif"
+              alt="Developer at desk"
+            />
+          </div>
+        </div>
+      </section>
+
+      <!-- Skills -->
+      <section id="skills">
+        <div class="container">
+          <h2 class="section-title">
+            <i class="fa-solid fa-screwdriver-wrench"></i> Skills
+          </h2>
+          <p class="muted">
+            Focused on the web stack. Constantly improving through projects and
+            practice.
+          </p>
+          <div class="skills-grid reveal">
+            <article class="skill">
+              <i class="fa-brands fa-html5"></i>
+              <h3>HTML5</h3>
+              <p class="muted">Semantic, accessible markup.</p>
+              <div
+                class="meter"
+                aria-label="HTML proficiency"
+                role="meter"
+                aria-valuenow="90"
+                aria-valuemin="0"
+                aria-valuemax="100"
+              >
+                <span style="width: 90%"></span>
+              </div>
+            </article>
+            <article class="skill">
+              <i class="fa-brands fa-css3-alt"></i>
+              <h3>CSS3</h3>
+              <p class="muted">Responsive layouts, animations.</p>
+              <div
+                class="meter"
+                aria-label="CSS proficiency"
+                role="meter"
+                aria-valuenow="85"
+                aria-valuemin="0"
+                aria-valuemax="100"
+              >
+                <span style="width: 85%"></span>
+              </div>
+            </article>
+            <article class="skill">
+              <i class="fa-brands fa-square-js"></i>
+              <h3>JavaScript</h3>
+              <p class="muted">Interactive UI, APIs, state.</p>
+              <div
+                class="meter"
+                aria-label="JS proficiency"
+                role="meter"
+                aria-valuenow="80"
+                aria-valuemin="0"
+                aria-valuemax="100"
+              >
+                <span style="width: 80%"></span>
+              </div>
+            </article>
+            <article class="skill">
+              <i class="fa-brands fa-react"></i>
+              <h3>TypeScript / React (learning)</h3>
+              <p class="muted">Typing, components, hooks.</p>
+              <div
+                class="meter"
+                aria-label="TS/React"
+                role="meter"
+                aria-valuenow="60"
+                aria-valuemin="0"
+                aria-valuemax="100"
+              >
+                <span style="width: 60%"></span>
+              </div>
+            </article>
+            <article class="skill">
+              <i class="fa-brands fa-python"></i>
+              <h3>Python (learning)</h3>
+              <p class="muted">Scripting & problem solving.</p>
+              <div
+                class="meter"
+                aria-label="Python"
+                role="meter"
+                aria-valuenow="55"
+                aria-valuemin="0"
+                aria-valuemax="100"
+              >
+                <span style="width: 55%"></span>
+              </div>
+            </article>
+            <article class="skill">
+              <i class="fa-solid fa-code"></i>
+              <h3>C++ (learning)</h3>
+              <p class="muted">Basics & OOP.</p>
+              <div
+                class="meter"
+                aria-label="C++"
+                role="meter"
+                aria-valuenow="45"
+                aria-valuemin="0"
+                aria-valuemax="100"
+              >
+                <span style="width: 45%"></span>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Projects -->
+      <section id="projects">
+        <div class="container">
+          <h2 class="section-title">
+            <i class="fa-solid fa-diagram-project"></i> Projects
+          </h2>
+          <div class="projects-grid reveal">
+            <!-- Project 1 -->
+            <article class="card">
+              <div class="thumb">
+                <video
+                  src="WeatherApp.mp4"
+                  controls
+                  playsinline
+                  style="width: 100%; height: 100%"
+                ></video>
+              </div>
+              <div class="body">
+                <h3>Weather App</h3>
+                <p class="muted">
+                  Instant weather by city with real‑time data (temp, humidity,
+                  wind). Clean UI, responsive.
+                </p>
+                <div class="tags">
+                  <span class="tag">HTML</span><span class="tag">CSS</span
+                  ><span class="tag">JS</span>
+                </div>
+              </div>
+              <div class="actions">
+                <a class="btn" href="#" target="_blank" rel="noopener"
+                  >Live Demo</a
+                >
+                <a class="btn" href="#" target="_blank" rel="noopener"
+                  >Source</a
+                >
+              </div>
+            </article>
+            <!-- Project 2 -->
+            <article class="card">
+              <div class="thumb">
+                <video
+                  src="CRUDS.mp4"
+                  controls
+                  playsinline
+                  style="width: 100%; height: 100%"
+                ></video>
+              </div>
+              <div class="body">
+                <h3>CRUDS App</h3>
+                <p class="muted">
+                  Create/Read/Update/Delete products with localStorage + live
+                  search.
+                </p>
+                <div class="tags">
+                  <span class="tag">HTML</span><span class="tag">CSS</span
+                  ><span class="tag">JS</span>
+                </div>
+              </div>
+              <div class="actions">
+                <a class="btn" href="#" target="_blank" rel="noopener"
+                  >Live Demo</a
+                >
+                <a class="btn" href="#" target="_blank" rel="noopener"
+                  >Source</a
+                >
+              </div>
+            </article>
+            <!-- Project 3 -->
+            <article class="card">
+              <div class="thumb">
+                <video
+                  src="FoodLover.mp4"
+                  controls
+                  playsinline
+                  style="width: 100%; height: 100%"
+                ></video>
+              </div>
+              <div class="body">
+                <h3>Food Lover</h3>
+                <p class="muted">
+                  Modern restaurant site with menu, responsive pages, and dark
+                  mode.
+                </p>
+                <div class="tags">
+                  <span class="tag">HTML</span><span class="tag">CSS</span
+                  ><span class="tag">JS</span>
+                </div>
+              </div>
+              <div class="actions">
+                <a class="btn" href="#" target="_blank" rel="noopener"
+                  >Live Demo</a
+                >
+                <a class="btn" href="#" target="_blank" rel="noopener"
+                  >Source</a
+                >
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- About -->
+      <section id="about" class="about">
+        <div class="container">
+          <h2 class="section-title">
+            <i class="fa-solid fa-user"></i> About Me
+          </h2>
+          <div class="grid reveal">
+            <div>
+              <p>
+                Hi! I’m Ahmed Safwat, a creative Front‑End developer who enjoys
+                turning ideas into polished, responsive interfaces using
+                <strong>HTML</strong>, <strong>CSS</strong> and
+                <strong>JavaScript</strong>. I’m currently leveling up in
+                <strong>TypeScript</strong>, <strong>React</strong>, and
+                exploring <strong>Python</strong> & <strong>C++</strong>.
+              </p>
+              <p class="muted">
+                Goal: join a professional team, build impactful products, and
+                keep learning every day.
+              </p>
+              <blockquote class="muted">
+                “Great things start with a small step and a clear vision.” —
+                Ahmed Safwat
+              </blockquote>
+            </div>
+            <div class="avatar" aria-hidden="true">
+              <img
+                src="2.avif"
+                alt="Team working together"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact -->
+      <section id="contact" class="contact">
+        <div class="container">
+          <h2 class="section-title">
+            <i class="fa-solid fa-paper-plane"></i> Contact
+          </h2>
+          <div class="grid reveal">
+            <form class="form" onsubmit="return sendMail(event)">
+              <div class="field">
+                <label for="name">Name</label>
+                <input
+                  id="name"
+                  name="name"
+                  class="input"
+                  type="text"
+                  autocomplete="name"
+                  required
+                />
+              </div>
+              <div class="field">
+                <label for="email">Email</label>
+                <input
+                  id="email"
+                  name="email"
+                  class="input"
+                  type="email"
+                  autocomplete="email"
+                  required
+                />
+              </div>
+              <div class="field">
+                <label for="message">Message</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  class="textarea"
+                  required
+                ></textarea>
+              </div>
+              <button type="submit" class="btn primary" style="width: 100%">
+                <i class="fa-solid fa-paper-plane"></i> Send
+              </button>
+              <p class="muted" style="margin-top: 8px">
+                No passwords collected. The form opens your email app with a
+                pre‑filled message.
+              </p>
+            </form>
+
+            <aside class="panel">
+              <h3>Contact Information</h3>
+              <ul>
+                <li>
+                  <i class="fa-solid fa-envelope"></i>
+                  <a href="mailto:ahmedsafwat27as@gmail.com"
+                    >ahmedsafwat27as@gmail.com</a
+                  >
+                </li>
+                <li>
+                  <i class="fa-brands fa-github"></i>
+                  <a href="https://github.com/" target="_blank" rel="noopener"
+                    >GitHub</a
+                  >
+                </li>
+                <li>
+                  <i class="fa-brands fa-linkedin"></i>
+                  <a
+                    href="https://linkedin.com/in/"
+                    target="_blank"
+                    rel="noopener"
+                    >LinkedIn</a
+                  >
+                </li>
+                <li>
+                  <i class="fa-brands fa-x-twitter"></i>
+                  <a href="https://twitter.com/" target="_blank" rel="noopener"
+                    >Twitter</a
+                  >
+                </li>
+              </ul>
+            </aside>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container">
+        © <span id="year"></span> Ahmed Safwat — Built with ❤ using HTML/CSS/JS
+      </div>
+    </footer>
+
+    <script src="main.js"></script>
+  </body>
+</html>
